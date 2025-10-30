@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-const API_BASE = import.meta.env.VITE_API_BASE || ""; 
-// In dev: leave empty string -> uses Vite proxy (/api/*)
-// In prod: set VITE_API_BASE to your backend URL on Render
+const API_BASE = import.meta.env.VITE_API_BASE || "";
 
 export default function App() {
   const [prompt, setPrompt] = useState("");
@@ -44,7 +42,3 @@ export default function App() {
     </div>
   );
 }
-
-  );
-}
-
